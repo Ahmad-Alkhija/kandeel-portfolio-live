@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "vision": "Vision",
+    "mission": "Mission",
+    "agency": "Official Agency",
+    "services": "Services",
+    "events": "Events",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Kandeel Almustashar",
+    "subtitle": "for Trading & Aviation Services",
+    "description": "Official General Sales Agent of Jazeera Airways – Kuwait in Syria",
+    "cta_primary": "Explore Our Services",
+    "cta_secondary": "Contact Us",
+    "scroll_down": "Scroll Down"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Kandeel Almustashar for Trading & Aviation Services is a legally registered company operating under the laws of the Syrian Arab Republic. The company is engaged in multiple sectors, including trading, engineering, and civil aviation services. Most notably, it has the honor of serving as the Official General Sales Agent (GSA) of Jazeera Airways – Kuwait in Syria.",
+    "sectors": "Our Business Sectors",
+    "sector_trading": "Trading",
+    "sector_engineering": "Engineering",
+    "sector_aviation": "Civil Aviation",
+    "sector_desc_trading": "Comprehensive trading solutions and import-export services across multiple industries.",
+    "sector_desc_engineering": "Professional engineering services with a focus on quality and innovation.",
+    "sector_desc_aviation": "Full-spectrum civil aviation services including airline representation and ground handling."
+  },
+  "vision": {
+    "title": "Our Vision",
+    "description": "To be the leading Syrian company in aviation services and trading, setting the standard for excellence, reliability, and innovation in the region."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "To provide exceptional services that connect Syria to the world through strategic partnerships, operational excellence, and unwavering commitment to quality."
+  },
+  "agency": {
+    "title": "Official General Sales Agent",
+    "subtitle": "Proudly representing Jazeera Airways in Syria",
+    "description": "Kandeel Almustashar has the distinguished honor of being appointed as the Official General Sales Agent (GSA) of Jazeera Airways – Kuwait in the Syrian Arab Republic. This prestigious partnership reflects our commitment to excellence in aviation services and our capability to represent one of the region's leading airlines.",
+    "about_airline": "About Jazeera Airways",
+    "airline_desc": "Jazeera Airways is Kuwait's leading low-cost airline, operating flights to over 50 destinations across the Middle East, Asia, Africa, and Europe. Known for its reliability, modern fleet, and exceptional service, Jazeera Airways continues to expand its network and enhance the travel experience for millions of passengers.",
+    "services_title": "Our Airline Services",
+    "service_ticketing": "Ticketing & Reservations",
+    "service_ticketing_desc": "Professional ticketing and reservation services for Jazeera Airways flights.",
+    "service_support": "Customer Support",
+    "service_support_desc": "Dedicated customer support for inquiries, bookings, and travel assistance.",
+    "service_cargo": "Cargo Services",
+    "service_cargo_desc": "Comprehensive cargo and freight solutions through Jazeera Airways network."
+  },
+  "services": {
+    "title": "Our Services & Activities",
+    "subtitle": "Excellence across multiple sectors",
+    "trading": "Trading",
+    "trading_desc": "Import and export services, commodity trading, and supply chain solutions tailored to the Syrian and regional markets.",
+    "engineering": "Engineering",
+    "engineering_desc": "Engineering consultancy, project management, and technical services delivered with precision and expertise.",
+    "aviation": "Aviation Services",
+    "aviation_desc": "Comprehensive aviation services including airline representation, ground handling, and flight support operations.",
+    "airline": "Airline Representation",
+    "airline_desc": "Official representation of international airlines in Syria, providing sales, marketing, and operational support.",
+    "business": "Business Services",
+    "business_desc": "Strategic consulting, market entry services, and business development support for international partners."
+  },
+  "events": {
+    "title": "Events & Activities",
+    "subtitle": "Our presence in the aviation and business community",
+    "no_events": "More events coming soon. Stay tuned for our latest activities and appearances."
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Moments that define our journey"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "We'd love to hear from you",
+    "address": "Damascus, Syrian Arab Republic",
+    "phone": "+963 XX XXX XXXX",
+    "email": "info@kandeel-almustashar.com",
+    "form_name": "Your Name",
+    "form_email": "Your Email",
+    "form_phone": "Phone Number",
+    "form_message": "Your Message",
+    "form_submit": "Send Message",
+    "form_success": "Thank you! Your message has been sent successfully.",
+    "whatsapp": "Chat on WhatsApp",
+    "map_placeholder": "Google Maps will be integrated here"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "designed_by": "Kandeel Almustashar",
+    "quick_links": "Quick Links",
+    "follow_us": "Follow Us"
+  },
+  "language": {
+    "switch_to": "العربية",
+    "current": "English"
+  }
+}

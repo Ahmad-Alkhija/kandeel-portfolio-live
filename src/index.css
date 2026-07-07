@@ -1,0 +1,212 @@
+@import "tailwindcss";
+
+@theme {
+  --color-aviation-navy: #0a1628;
+  --color-aviation-navy-light: #132240;
+  --color-aviation-gold: #c9a84c;
+  --color-aviation-gold-light: #e0c268;
+  --color-aviation-gold-dark: #a8882e;
+  --color-aviation-sky: #e8f0fe;
+  --color-aviation-sky-dark: #1a2a4a;
+  --color-aviation-cream: #faf6f0;
+  --color-aviation-white: #fbfbfd;
+  --color-aviation-gray: #6b7280;
+  --color-aviation-dark: #0d1117;
+  
+  --font-display: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+  --font-arabic: "Tajawal", sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-aviation-white);
+  color: var(--color-aviation-navy);
+  overflow-x: hidden;
+}
+
+/* RTL Support */
+html[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+html[dir="rtl"] .font-display {
+  font-family: var(--font-arabic);
+  font-weight: 700;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-aviation-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-aviation-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-aviation-gold-dark);
+}
+
+/* Selection */
+::selection {
+  background: var(--color-aviation-gold);
+  color: var(--color-aviation-navy);
+}
+
+/* Glassmorphism base */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.glass-dark {
+  background: rgba(10, 22, 40, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+/* Section spacing */
+.section-padding {
+  padding: 6rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 8rem 2rem;
+  }
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-aviation-gold), #f0d68a, var(--color-aviation-gold-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gold underline accent */
+.accent-line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-aviation-gold), var(--color-aviation-gold-light));
+  border-radius: 2px;
+  margin: 1rem 0;
+}
+
+html[dir="rtl"] .accent-line {
+  margin: 1rem auto 1rem 0;
+}
+
+/* ---- Enhanced Animation Keyframes ---- */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes contrail-fade {
+  0% { opacity: 0.6; width: 100%; }
+  100% { opacity: 0; width: 0%; }
+}
+
+@keyframes dash-move {
+  0% { stroke-dashoffset: 1000; }
+  100% { stroke-dashoffset: 0; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(201, 168, 76, 0.1); }
+  50% { box-shadow: 0 0 40px rgba(201, 168, 76, 0.3); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes orbit {
+  0% { transform: rotate(0deg) translateX(120px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(120px) rotate(-360deg); }
+}
+
+/* Utility classes */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Contrail trail behind airplane */
+.contrail {
+  position: relative;
+}
+
+.contrail::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.3), transparent);
+  transform: translateY(-50%);
+  animation: contrail-fade 1.5s ease-out infinite;
+}
+
+/* Smooth reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Parallax layer */
+.parallax-layer {
+  will-change: transform;
+}
+
+/* Count up number style */
+.count-up-number {
+  font-variant-numeric: tabular-nums;
+}
